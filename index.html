@@ -1,0 +1,155 @@
+<!--
+     This code written by Moha4Mach
+
+     This webpage is not responsive
+    Media:-
+    1440px : done
+    375px  : not done yet
+                                    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Kumbh+Sans)">
+    
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      * {padding: 0;margin: 0;box-sizing: border-box}
+      .attribution {
+          font-size: 11px;
+          text-align: center;
+          width: 374px;
+          margin: 0 36.1%;
+          color: antiquewhite
+      }
+      .attribution a { color: #111a;text-decoration: none }
+    
+      body {
+          font-size: 18px;
+          font-family: 'Kumbh Sans', sans-serif;
+          font-weight: 700;
+          line-height: 1.86;
+          background: hsl(185, 75%, 39%);
+          color: hsl(229, 23%, 23%)
+      }
+      
+      .leftFloat {float: left}
+      
+      .clear {clear: both}
+      
+      .gray-blue {color: hsl(227, 10%, 46%)}
+      
+      .light {font-weight: 400;font-size: 16px}
+      
+      .small {font-size: 14px;letter-spacing: 2px}
+      
+      .container {
+          width: 374px;
+          margin: 8% 36%;
+          border-radius: 15px;
+          text-align: center;
+          background-color: #fff;
+      }
+      
+      .container .cover {
+          width: 100%;
+          height: 140px;
+          border-radius: 15px 15px 0 0;
+          background: url(images/bg-pattern-card.svg);
+          background-size: cover
+      }
+      
+      .container .profileImage {
+          position: relative;
+          bottom: 48px; 
+      }
+      
+      .container .profileImage img {
+          border: 4px solid #fff;
+          border-radius: 50%
+      }
+      
+      .container .info {
+          margin: -41px 0 17px;
+          display: flex;
+          justify-content: center;
+          flex-flow: column
+      }
+      .container .info span.age {margin-left: 6px;font-size: 18px;}
+      
+      .container hr {width: 99.5%;border: 0.5px solid rgba(231,231,231,0.6)}
+      
+      .container .social {
+          padding: 17px;
+          margin: 0 %
+      }
+      
+      .container .social div.followers {margin: 0 0 0 14%}
+      .container .social div.likes {margin: 0 12%}
+      
+      /* Pattern Background Style */
+      .deep {z-index: -1}
+      
+      .pattern-top {
+          margin: 0 3%;
+          position: relative;
+          
+      }
+      .pattern-bottom {
+          margin: 0 35%;
+          position: relative;
+          
+      }
+      
+  </style>
+</head>
+<body>
+    <div class="deep pattern-top"></div>
+    <div class="deep pattern-bottom"></div>
+    <!-- container to control position of the content -->
+    <div class="container">
+        <!-- Start Container -->
+        <div class="cover"></div>
+        <div class="profileImage"><img src="images/image-victor.jpg" alt="Victor Crest"></div>
+        <div class="info">
+            <p class="name">Victor Crest <span class="age gray-blue light">26</span></p>
+            <p class="country gray-blue light">London</p>
+        </div>
+        
+        <hr>
+        
+        <div class="social">
+            <div class="followers leftFloat">
+                <p>80K</p>
+                <p class="gray-blue light small">Followers</p>
+            </div>
+            
+            <div class="likes leftFloat">
+                <p>803K</p>
+                <p class="gray-blue light small">Likes</p>
+            </div>
+            
+            <div class="photos leftFloat">
+                <p>1.4K</p>
+                <p class="gray-blue light small">Photos</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- End Container -->
+    </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>
+    Coded by <a href="#">Muhammed Abdullsalam.</a>
+  </div>
+    
+    
+</body>
+</html>
